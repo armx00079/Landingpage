@@ -1,190 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Official Channel</title>
+<title>TSK - The Supporters King</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-
-/* ===== BODY ===== */
-body{
+*{
 margin:0;
-font-family: Arial, sans-serif;
-color:white;
-overflow-x:hidden;
-background:black;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-/* ===== ANIMATED GALAXY BACKGROUND ===== */
-body::before{
-content:"";
+body{
+background:#000;
+color:white;
+scroll-behavior:smooth;
+}
+
+.section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+}
+
+.gold{
+background:linear-gradient(90deg,#d4af37,#f5d76e);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.btn-gold{
+background:linear-gradient(90deg,#d4af37,#f5d76e);
+color:black;
+padding:18px 40px;
+border-radius:40px;
+font-weight:600;
+border:none;
+cursor:pointer;
+font-size:18px;
+margin-top:20px;
+}
+
+.card{
+background:#111;
+border-radius:20px;
+padding:20px;
+margin:20px 0;
+width:100%;
+max-width:500px;
+}
+
+.fixed-buttons{
 position:fixed;
-top:0;
+bottom:0;
 left:0;
 width:100%;
-height:100%;
-background:
-radial-gradient(circle at 20% 30%, #1a1a40 0%, transparent 40%),
-radial-gradient(circle at 80% 70%, #0f3460 0%, transparent 40%),
-radial-gradient(circle at 50% 50%, #16213e 0%, transparent 50%),
-black;
-z-index:-1;
-animation: galaxyMove 25s infinite linear;
-}
-
-@keyframes galaxyMove{
-0%{ transform:scale(1) rotate(0deg); }
-50%{ transform:scale(1.1) rotate(180deg); }
-100%{ transform:scale(1) rotate(360deg); }
-}
-
-/* ===== TOP HEADER ===== */
-.topbar{
 display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 15px;
-background:rgba(0,0,0,0.5);
-backdrop-filter:blur(10px);
 }
 
-.top-left{
-display:flex;
-align-items:center;
-}
-
-.top-left img{
-width:40px;
-height:40px;
-border-radius:50%;
-margin-right:10px;
-object-fit:cover;
-}
-
-.top-left h4{
-margin:0;
-font-size:12px;
-color:#ccc;
-}
-
-.top-left h2{
-margin:0;
-font-size:16px;
-}
-
-.join-btn{
-padding:8px 15px;
-border-radius:20px;
-background:#2a2a2a;
-color:white;
-text-decoration:none;
-font-size:13px;
-border:1px solid #555;
-}
-
-/* ===== CARD ===== */
-.card{
-margin:20px;
-padding:20px;
-border-radius:20px;
-background: rgba(255,255,255,0.08);
-backdrop-filter: blur(10px);
-text-align:center;
-}
-
-.profile{
-width:130px;
-height:130px;
-border-radius:50%;
-border:4px solid white;
-object-fit:cover;
-display:block;
-margin:15px auto;
-}
-
-.bio-text{
-margin-top:10px;
-font-size:15px;
-line-height:26px;
-color:#ddd;
-}
-
-.bio-text span{
-display:block;
-margin:5px 0;
-}
-
-.button{
-display:inline-block;
-margin:10px;
-padding:12px 25px;
-border-radius:30px;
-background:#0088cc;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-.bigbtn{
-display:block;
-margin:20px auto;
-width:80%;
+.fixed-buttons a{
+flex:1;
 padding:15px;
-border-radius:40px;
-background:linear-gradient(90deg,#1e90ff,#0044ff);
+text-align:center;
 color:white;
-font-size:18px;
+font-weight:600;
 text-decoration:none;
 }
 
+.play{
+background:linear-gradient(90deg,#d4af37,#f5d76e);
+color:black;
+}
+
+.telegram{
+background:#229ED9;
+}
+
+.whatsapp{
+background:#25D366;
+}
 </style>
 </head>
 
 <body>
 
-<!-- TOP HEADER -->
-<div class="topbar">
-  <div class="top-left">
-    <img src="file_00000000e2f47208890fe70ace72be67.png">
-    <div>
-      <h4>OFFICIAL CHANNEL</h4>
-      <h2>Armx khan</h2>
-    </div>
-  </div>
+<!-- HERO SECTION -->
+<section class="section">
+<h1 class="gold" style="font-size:40px;">TSK</h1>
+<h2>The Supporters King</h2>
+<p style="margin-top:20px;">500+ Games Available | 24x7 Online</p>
+<button class="btn-gold" onclick="scrollToNext()">Visit Now This Website</button>
+</section>
 
-  <a class="join-btn" href="https://t.me/factsrs333" target="_blank">
-  Join on Telegram
-  </a>
-</div>
+<!-- GAMES SECTION -->
+<section class="section">
+<h2 class="gold">500+ Games Available</h2>
 
-<!-- MAIN PROFILE CARD -->
 <div class="card">
-
-<h1>Armx khan</h1>
-
-<div class="bio-text">
-<span>🔍 <b>Epstein File Researcher</b></span>
-<span>🕵️‍♂️ Digital Truth Seeker | Cyber Mind</span>
-<span>💻 Files • Data • Dark Web Research</span>
-<span>⚠️ Knowledge</span>
-</div>
-
-<img src="file_00000000e2f47208890fe70ace72be67.png" class="profile">
-
-<a class="button" href="https://t.me/factsrs333" target="_blank">Telegram</a>
-<a class="button" href="https://t.me/factsrs333" target="_blank">Signals</a>
-<a class="button" href="https://t.me/factsrs333" target="_blank">Guide</a>
-
+<h3>Teen Patti</h3>
+<p>Play with best odds and instant payout.</p>
 </div>
 
 <div class="card">
-<h2>Welcome to Official Channel</h2>
-
-<a class="bigbtn" href="https://t.me/factsrs333" target="_blank">
-Join Telegram Free
-</a>
-
+<h3>Cricket</h3>
+<p>Play with best odds and instant payout.</p>
 </div>
+
+<div class="card">
+<h3>Casino Games</h3>
+<p>Play with best odds and instant payout.</p>
+</div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="section">
+<h2 class="gold">Why Choose TSK?</h2>
+
+<div class="card">24x7 Gaming Available</div>
+<div class="card">Fastest Deposit & Withdrawal</div>
+<div class="card">Easy & Secure Payment</div>
+<div class="card">Trusted & Reliable Platform</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+<h2 class="gold">Join TSK Today & Play Like A King 👑</h2>
+<p style="max-width:500px;margin-top:20px;">
+Experience the royal treatment with instant payouts.
+</p>
+<button class="btn-gold" onclick="window.location.href='https://example.com'">
+Start Playing Now
+</button>
+</section>
+
+<!-- FIXED BUTTONS -->
+<div class="fixed-buttons">
+<a href="https://example.com" class="play">Play Now</a>
+<a href="https://t.me/yourtelegram" class="telegram">Telegram</a>
+<a href="https://wa.me/919999999999" class="whatsapp">WhatsApp</a>
+</div>
+
+<script>
+function scrollToNext(){
+window.scrollBy({
+top: window.innerHeight,
+behavior: 'smooth'
+});
+}
+</script>
 
 </body>
 </html>
