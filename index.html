@@ -204,6 +204,42 @@ margin:5px 0 0 0;
 font-size:14px;
 color:#ddd;
 }
+  /* PREMIUM HERO BUTTONS */
+
+.cta-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+padding:18px;
+border-radius:18px;
+font-weight:700;
+font-size:16px;
+text-decoration:none;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+transition:0.2s ease;
+}
+
+.cta-btn:active{
+transform:scale(0.97);
+}
+
+.play-big{
+background:linear-gradient(90deg,#d4af37,#f5d76e,#d4af37);
+background-size:200% auto;
+color:black;
+animation:shine 3s linear infinite;
+}
+
+.telegram-big{
+background:linear-gradient(90deg,#2AABEE,#1e90ff);
+color:white;
+}
+
+.whatsapp-big{
+background:linear-gradient(90deg,#25D366,#1ebe5d);
+color:white;
+}
 /* FIXED BOTTOM BUTTONS */
 .fixed-buttons{
 position:fixed;
@@ -300,25 +336,25 @@ easy deposits, instant withdrawals
 and 24x7 dedicated support.    
 </p>  <!-- BIG CTA BUTTONS -->  <div class="fixed-buttons">
 
-<a href="#" class="play">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="black">
+<a href="https://example.com" class="cta-btn play-big">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="black">
 <path d="M8 5v14l11-7z"/>
 </svg>
 PLAY NOW
 </a>
 
-<a href="#" class="telegram">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+<a href="https://t.me/ssportbook" class="cta-btn telegram-big">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="white">
 <path d="M22 2L2 10l6 2 2 6 4-5 6 4z"/>
 </svg>
-TELEGRAM
+JOIN TELEGRAM
 </a>
 
-<a href="#" class="whatsapp">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+<a href="https://wa.me/7412867014?text=HELLO%20I%20WANT%20ID" class="cta-btn whatsapp-big">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="white">
 <path d="M12 2a10 10 0 00-8.94 14.5L2 22l5.7-1.5A10 10 0 1012 2z"/>
 </svg>
-WHATSAPP
+WHATSAPP SUPPORT
 </a>
 
 </div>
