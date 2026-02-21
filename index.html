@@ -21,7 +21,7 @@ color:white;
 scroll-behavior:smooth;
 }
 
-/* FULL SCREEN SECTION */
+/* SECTION */
 .section{
 display:flex;
 flex-direction:column;
@@ -31,7 +31,6 @@ text-align:center;
 padding:80px 20px;
 }
 
-/* NORMAL COMPACT SECTION */
 .small-section{
 padding:80px 20px;
 text-align:center;
@@ -44,6 +43,7 @@ background:linear-gradient(90deg,#d4af37,#f5d76e);
 -webkit-text-fill-color:transparent;
 }
 
+/* GOLD BUTTON */
 .btn-gold{
 background:linear-gradient(90deg,#d4af37,#f5d76e);
 color:black;
@@ -56,6 +56,53 @@ font-size:18px;
 margin-top:20px;
 }
 
+/* BIG CTA BUTTONS */
+.cta-buttons{
+margin-top:40px;
+display:flex;
+flex-direction:column;
+gap:15px;
+width:100%;
+max-width:500px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.cta-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+padding:18px;
+border-radius:40px;
+font-weight:600;
+font-size:16px;
+text-decoration:none;
+}
+
+.play-big{
+background:linear-gradient(90deg,#d4af37,#f5d76e,#d4af37);
+background-size:200% auto;
+color:black;
+animation:shine 3s linear infinite;
+}
+
+.telegram-big{
+background:#2AABEE;
+color:white;
+}
+
+.whatsapp-big{
+background:#25D366;
+color:white;
+}
+
+@keyframes shine{
+0%{background-position:0%;}
+100%{background-position:200%;}
+}
+
+/* CARDS */
 .card{
 background:#111;
 border-radius:20px;
@@ -65,6 +112,7 @@ width:100%;
 max-width:500px;
 }
 
+/* FIXED BOTTOM BUTTONS */
 .fixed-buttons{
 position:fixed;
 bottom:0;
@@ -107,7 +155,8 @@ background:#25D366;
 <button class="btn-gold" onclick="scrollToNext()">Visit Now This Website</button>
 </section>
 
-  <section class="small-section">
+<!-- SECOND PREMIUM SECTION -->
+<section class="small-section">
 
 <h1 class="gold" style="font-size:50px;letter-spacing:3px;">
 TSK
@@ -122,7 +171,6 @@ background:linear-gradient(90deg,#d4af37,#f5d76e);
 margin:25px auto;border-radius:10px;">
 </div>
 
-<!-- YELLOW MAIN LINE -->
 <p style="margin-top:25px;
 font-size:18px;
 font-weight:600;
@@ -131,7 +179,6 @@ color:#d4af37;">
 | FASTEST DEPOSIT & WITHDRAWAL
 </p>
 
-<!-- SMALL DESCRIPTION TEXT -->
 <p style="
 margin-top:20px;
 font-size:14px;
@@ -141,16 +188,31 @@ margin-left:auto;
 margin-right:auto;
 line-height:1.6;
 ">
-
 Play Teen Patti, Cricket, Batting, and Casino games on India's most trusted gaming platform. Enjoy 
 <span style="color:#d4af37;font-weight:600;">
 easy deposits, instant withdrawals
 </span>, 
 and 24x7 dedicated support.
-
 </p>
 
-  </section>
+<!-- BIG CTA BUTTONS -->
+<div class="cta-buttons">
+
+<a href="https://example.com" class="cta-btn play-big">
+▶ PLAY NOW
+</a>
+
+<a href="https://t.me/yourtelegram" class="cta-btn telegram-big">
+✈ JOIN TELEGRAM
+</a>
+
+<a href="https://wa.me/919999999999" class="cta-btn whatsapp-big">
+💬 WHATSAPP SUPPORT
+</a>
+
+</div>
+
+</section>
 
 <!-- GAMES SECTION -->
 <section class="section">
